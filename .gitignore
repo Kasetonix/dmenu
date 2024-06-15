@@ -1,0 +1,11 @@
+# Ignore all files without extensions (excluding the makefile)
+*
+!*.*
+!*/
+!Makefile
+
+# ignoring config.h (automatically gets created on build)
+config.h
+
+# ignoring object files
+*.o
