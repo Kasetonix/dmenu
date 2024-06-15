@@ -19,9 +19,6 @@ Explanations for all patches in this build
 ## [fuzzy-match.diff](https://tools.suckless.org/dmenu/patches/fuzzymatch/)
 > Adds support for fuzzy-matching
 
-## [highlight.diff](https://tools.suckless.org/dmenu/patches/highlight/)
-> Adds the highlighting of matched chars
-
 ## [line-height.diff](https://tools.suckless.org/dmenu/patches/line-height/)
 > Adds the option to change height of individual lines
 
