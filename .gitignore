@@ -3,6 +3,8 @@
 !*.*
 !*/
 !Makefile
+!dmenu_run
+!dmenu_path
 
 # ignoring config.h (automatically gets created on build)
 config.h
