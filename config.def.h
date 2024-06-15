@@ -1,13 +1,16 @@
-/* See LICENSE file for copyright and license details. */
-/* Default settings; can be overriden by command line. */
+// DMENU - suckless's dynamic menu
 
-static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
-static const unsigned int alpha = 0xcc;     /* Amount of opacity. 0xff is opaque             */
-/* -fn option overrides fonts[0]; default X11 font or font set */
+static int topbar = 1;
+static const unsigned int alpha = 0xcc; // Opacity in hex 
+
+static const char *prompt = "➜ "; 
+static int draw_input = 1; // Should the input box exist or not 
+
 static const char *fonts[] = {
 	"JetBrainsMono Nerd Font:size=16"
 };
-static const char *prompt      = "➜ ";      /* -p  option; prompt to the left of input field */
+
+// Colorschemes and opacity
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
     [SchemeNorm] = { "#abb2bf", "#1e2228" },
@@ -23,25 +26,16 @@ static const unsigned int alphas[SchemeLast][2] = {
 	[SchemeSel] = { OPAQUE, alpha },
 	[SchemeOut] = { OPAQUE, alpha },
 };
-/* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 10;
 
-/* -h option; minimum height of a menu line */
-static unsigned int lineheight = 40;
-static unsigned int min_lineheight = 100;
-
-/*
- * Characters not considered part of a word while deleting words
- * for example: " /?\"&[]"
- */
-static const char worddelimiters[] = " ";
-
-/* Size of the window border */
 static unsigned int border_width = 4;
 
-static int centered = 1;                    /* -c option; centers dmenu on screen */
-static int min_width = 640;                    /* minimum width when centered */
+static unsigned int lines = 10;
+static unsigned int lineheight = 40;
+static unsigned int min_lineheight = 32;
 
-static int fuzzy = 1;                      /* -F  option; if 0, dmenu doesn't use fuzzy matching     */
+static const char worddelimiters[] = " ";
 
-static int draw_input = 1;                  /* -noi option; if 0, the input will not be drawn by default */
+static int centered = 1; 
+static int min_width = 640; 
+
+static int fuzzy = 1; // Fuzzy finding
