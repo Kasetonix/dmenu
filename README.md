@@ -10,14 +10,11 @@ Explanations for all patches in this build
 ## [border.diff](https://tools.suckless.org/dmenu/patches/border/)
 > Adds a border around the dmenu window 
 
-## [case-insensitive.diff](https://tools.suckless.org/dmenu/patches/case-insensitive/)
-> Changes the default matching behaviour to case-insensitive
-
 ## [center.diff](https://tools.suckless.org/dmenu/patches/center/)
 > Makes dmenu open in the center of the screen
 
-## [desktop-only.diff](https://tools.suckless.org/dmenu/patches/desktoponly/)
-> Adds the `dmenu_run_desktop` program that acts like `dmenu_run` but displays programs only from `/usr/share/applications`
+## [colored-caret.diff](https://tools.suckless.org/dmenu/patches/colored-caret/)
+> Adds an option to change the caret's color
 
 ## [fuzzy-match.diff](https://tools.suckless.org/dmenu/patches/fuzzymatch/)
 > Adds support for fuzzy-matching
@@ -33,3 +30,6 @@ Explanations for all patches in this build
 
 ## [no-input.diff](https://tools.suckless.org/dmenu/patches/no-input/)
 > Adds an option to disable input box
+
+## [no-sort.diff](https://tools.suckless.org/dmenu/patches/no-sort/)
+> Adds an option to not sort the input
