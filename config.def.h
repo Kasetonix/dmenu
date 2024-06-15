@@ -3,7 +3,7 @@
 static int topbar = 1;
 static const unsigned int alpha = 0xcc; // Opacity in hex 
 
-static const char *prompt = "➜ "; 
+static const char *prompt = "➜"; 
 static int draw_input = 1; // Should the input box exist or not 
 
 static const char *fonts[] = {
@@ -13,9 +13,11 @@ static const char *fonts[] = {
 // Colorschemes and opacity
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-    [SchemeNorm] = { "#abb2bf", "#1e2228" },
+    // [SchemeNorm] = { "#abb2bf", "#1e2228" },
 	// [SchemeNorm] = { "#abb2bf", "#262b32" },
-	[SchemeSel] = { "#abb2bf", "#31343f" },
+	[SchemeNorm] = { "#5c6370", "#1e2228" },
+	//[SchemeSel] = { "#abb2bf", "#31343f" },
+	[SchemeSel] = { "#abb2bf", "#1e2228" },
 	[SchemeOut] = { "#31343f", "#abb2bf" },
     [SchemeBd] = { "#abb2bf", "#5c6370" },
 	[SchemeCaret] = { "#5c6370", "#1e2228" },

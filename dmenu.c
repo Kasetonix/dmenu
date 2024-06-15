@@ -182,7 +182,7 @@ drawmenu(void)
 
 	if (draw_input) {
 		w = (lines > 0 || !matches) ? mw - x : inputw;
-		drw_setscheme(drw, scheme[SchemeNorm]);
+		drw_setscheme(drw, scheme[SchemeSel]);
 		drw_rect(drw, x + curpos, 2, 2, bh - 4, 1, 0);
 		drw_text(drw, x, 0, w, bh, lrpad / 2, text, 0);
 
