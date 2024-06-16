@@ -7,7 +7,7 @@ static const char *prompt = "➜";
 static int draw_input = 1; // Should the input box exist or not 
 
 // static const char *fonts[] = { "JetBrainsMono Nerd Font:size=16" };
-static const char *fonts[] = { "Victor Mono:weight=SemiBold:pixelsize=18:antialias=true:autohint=true" };
+static const char *fonts[] = { "Victor Mono:weight=SemiBold:size=16:antialias=true:autohint=true" };
 
 // Colorschemes and opacity
 static const char *colors[SchemeLast][2] = {
