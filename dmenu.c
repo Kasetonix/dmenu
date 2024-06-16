@@ -170,7 +170,7 @@ drawmenu(void)
 {
 	unsigned int curpos = 0;
 	struct item *item;
-	int x = 0, y = 0, fh = drw->fonts->h, w = 0;
+	int x = 0, y = 0, w = 0;
 
 	drw_setscheme(drw, scheme[SchemeNorm]);
 	drw_rect(drw, 0, 0, mw, mh, 1, 1);
